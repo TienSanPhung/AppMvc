@@ -1,4 +1,6 @@
+using AppMvc.Data;
 using AppMvc.Models;
+using AppMvc.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpsRedirection(options=>{
     options.HttpsPort = 443;
 });
+// add dịch vụ mail
+builder.Services.AddOptions (); // Kích hoạt Options
+var mailsettings = builder.Configuration.GetSection ("MailSettings"); // đọc config
+builder.Services.Configure<MailSettings> (mailsettings); // đăng ký để Inject
+ builder.Services.AddTransient<IEmailSender, SendMailService> (); // Đăng ký dịch vụ Mail
 
 // add DbContext
 builder.Services.AddDbContext<AppDbContext>(options=>{
@@ -20,7 +27,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole> ()
     .AddEntityFrameworkStores<AppDbContext> ()
     .AddDefaultTokenProviders ();
 
-
+// add dịch vụ thông báo describer
+builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
 // add dịch vụ đăng nhập bằng gg và fb
 builder.Services.AddAuthentication()
     .AddGoogle(options=>{
@@ -37,6 +45,13 @@ builder.Services.AddAuthentication()
         options.CallbackPath = "/dang-nhap-tu-facebook";
 
     });
+// thiết lập hiển thị cho menu manager
+builder.Services.AddAuthorization(options=>{
+    options.AddPolicy("ViewManageMenu", appbuiler =>{
+        appbuiler.RequireAuthenticatedUser();
+        appbuiler.RequireRole(RoleName.Administrator);
+    });
+});
 // add thiết lập cho identity
 builder.Services.Configure<IdentityOptions> (options => {
     // Thiết lập về Password
