@@ -599,3 +599,4 @@ D:\C#\MVC\AppMvc\bin\Debug\net8.0\refs\System.Xml.XPath.XDocument.dll
 D:\C#\MVC\AppMvc\bin\Debug\net8.0\refs\WindowsBase.dll
 D:\C#\MVC\AppMvc\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\C#\MVC\AppMvc\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\C#\MVC\AppMvc\obj\Debug\net8.0\AppMvc.sourcelink.json
