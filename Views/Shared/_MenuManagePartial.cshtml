@@ -1,8 +1,17 @@
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Manage
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" asp-action="Index" asp-controller="DbManage" asp-area="Database">Database</a></li>
-  </ul>
-</div>
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService  authorization
+@{
+  var result = await authorization.AuthorizeAsync(this.User,"ViewManageMenu");
+}
+@if(result.Succeeded){
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Manage
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" asp-action="Index" asp-controller="DbManage" asp-area="Database">Database</a></li>
+        <li><a class="dropdown-item" asp-action="Index" asp-controller="Role" asp-area="Identity">Quản lý Role</a></li>
+        <li><a class="dropdown-item" asp-action="Index" asp-controller="User" asp-area="Identity">Quản lý User</a></li>
+      </ul>
+    </div>
+}
