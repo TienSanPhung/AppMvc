@@ -26,6 +26,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\C#\MVC\AppMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/C\#/MVC/AppMvc/Areas/Contact/Views/Contacts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xDb250YWN0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/Contact/Views/Contacts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xDb250YWN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/Contact/Views/Contacts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xDb250YWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/Contact/Views/Contacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xDb250YWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/Contact/Views/Contacts/SendContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xDb250YWN0c1xTZW5kQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/Contact/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#/MVC/AppMvc/Areas/Database/Views/DbManage/DeleteDb.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGF0YWJhc2VcVmlld3NcRGJNYW5hZ2VcRGVsZXRlRGIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -196,6 +220,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#/MVC/AppMvc/Areas/Identity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/MvcBd/Views/CustomerUpdate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXZjQmRcVmlld3NcQ3VzdG9tZXJVcGRhdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/MVC/AppMvc/Areas/MvcBd/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXZjQmRcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/MVC/AppMvc/Areas/ProductManage/Views/_ViewStart.cshtml]

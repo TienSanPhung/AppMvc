@@ -1,4 +1,4 @@
-﻿using AppMvc.Models;
+﻿using AppMvc.Models.Contacts;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace AppMvc.Models;
@@ -26,5 +26,6 @@ namespace AppMvc.Models;
 
             }
         }
+        public DbSet<Contact> Contacts {set;get;}
     }
 

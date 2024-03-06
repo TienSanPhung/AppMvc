@@ -602,3 +602,6 @@ D:\C#\MVC\AppMvc\obj\Debug\net8.0\refint\AppMvc.dll
 D:\C#\MVC\AppMvc\obj\Debug\net8.0\AppMvc.pdb
 D:\C#\MVC\AppMvc\obj\Debug\net8.0\AppMvc.genruntimeconfig.cache
 D:\C#\MVC\AppMvc\obj\Debug\net8.0\ref\AppMvc.dll
+D:\C#\MVC\AppMvc\bin\Debug\net8.0\bundleconfig.json
+D:\C#\MVC\AppMvc\bin\Debug\net8.0\package-lock.json
+D:\C#\MVC\AppMvc\bin\Debug\net8.0\package.json
