@@ -15,6 +15,12 @@ $contackBackground: #932685e5;
         max-width: 100px;
     }
 }
+.ptlbr{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .formcontact{
     font-weight: 700;
 
@@ -22,6 +28,16 @@ $contackBackground: #932685e5;
 .btn-primary{
     background-color: $contackBackground !important;
     border-color: $contackBackground;
+}
+
+.bg-color-header{
+  background-color:rgb(46 210 135 / 82%)  !important;
+  border-radius: 5px;
+  border-color: #d22e5ad2;
+}
+.bg-body{
+  background-color: #ffffff !important;
+  border-color: #010101d2;
 }
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

@@ -1,5 +1,6 @@
 ﻿using AppMvc.Data;
 using AppMvc.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ namespace AppMvc.Areas.Database.Controllers
 {
     [Area("Database")]
     [Route("/database-manage/[action]")]
+    
     public class DbManageController : Controller
     {
         private readonly AppDbContext _dbcontext;

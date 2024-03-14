@@ -54,6 +54,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Blog\Data\" />
+    <Folder Include="Areas\Blog\Models\" />
     <Folder Include="Areas\Contact\Data\" />
     <Folder Include="Areas\Contact\Models\" />
     <Folder Include="Areas\Database\Controllers\" />
@@ -71,6 +73,7 @@
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\lib\bootstrap\" />
+    <Folder Include="wwwroot\lib\bootstrap\dist\css\" />
     <Folder Include="wwwroot\lib\bootstrap\dist\js\" />
     <Folder Include="wwwroot\lib\jquery-validation-unobtrusive\" />
     <Folder Include="wwwroot\lib\jquery-validation\" />
@@ -84,6 +87,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="Areas\Blog\Views\_ViewImports.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\Contact\Views\_ViewStart.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\MvcBd\Views\_ViewStart.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\ProductManage\Views\_ViewImports.cshtml" />
@@ -101,6 +105,10 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Areas\Contact\Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\Blog\Views\_ViewImports.cshtml" />
   </ItemGroup>
 
 </Project>
