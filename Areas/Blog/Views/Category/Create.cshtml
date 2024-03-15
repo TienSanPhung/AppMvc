@@ -9,7 +9,7 @@
 
 <div class="row card box-shadow">
     <h1 class="card-header">@ViewData["Title"]</h1>
-    <div class="col-md-8 card-body">
+    <div class="col-md-11 card-body">
         <form asp-action="Create">
             <div class="container">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -44,7 +44,8 @@
 <div>
     <a asp-action="Index">Quay lại danh sách chuyên mục</a>
 </div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{
+    var summernote = new AppMvc.Models.Sommernote("#Description");
 }
+<partial name="_SummernotePartial" model="summernote"/>
+

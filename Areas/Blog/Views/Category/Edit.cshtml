@@ -43,7 +43,8 @@
 <div>
     <a asp-action="Index">Quay lại danh sách chuyên mục</a>
 </div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{
+    var summernote = new AppMvc.Models.Sommernote("#Description");
 }
+<partial name="_SummernotePartial" model="summernote"/>
+
