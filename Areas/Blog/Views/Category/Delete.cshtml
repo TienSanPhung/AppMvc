@@ -1,0 +1,44 @@
+﻿@model AppMvc.Models.Blog.Category
+
+@{
+    ViewData["Title"] = "Xóa chuyên mục Blog";
+   
+}
+
+
+<div class="box-shadow card">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+        <h3>Bạn cho chắc muốn xóa chuyên mục này?</h3>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class = "col-sm-4">
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+            <dd class = "col-sm-8">
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+            <dt class = "col-sm-4">
+                @Html.DisplayNameFor(model => model.Slug)
+            </dt>
+            <dd class = "col-sm-8">
+                @Html.DisplayFor(model => model.Slug)
+            </dd>
+            <dt class = "col-sm-4">
+                @Html.DisplayNameFor(model => model.ParentCategory)
+            </dt>
+            <dd class = "col-sm-8">
+                @Html.DisplayFor(model => model.ParentCategory.Slug)
+            </dd>
+        </dl>
+        
+        <form asp-action="Delete">
+            <div class="conteiner">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            <a asp-action="Index">Quay lại danh sách chuyên mục</a>
+            </div>
+        </form>
+    </div>
+</div>

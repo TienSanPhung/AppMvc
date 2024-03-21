@@ -1,0 +1,54 @@
+﻿@using Microsoft.EntityFrameworkCore
+@using System.Data
+
+@inject AppMvc.Models.AppDbContext dbContext
+@{
+    ViewData["Title"] = "Thông tin Db";
+    var connect = dbContext.Database.GetDbConnection();
+    var dbName = connect.Database;
+    var can_connect = dbContext.Database.CanConnect();
+}
+<partial name="_AlertMessage"/>
+<hr>
+<h2 >Thông tin cơ bản</h2>
+<ul>
+    <li><p>Tên cơ sở dữ liệu: @dbName</p></li>
+    <li><p>Nguồn: @connect.DataSource</p></li>
+    <li><p>Trạng thái: @connect.State</p></li>
+</ul>
+<hr>
+<h2>Migration</h2>
+@foreach(var migartion in dbContext.Database.GetAppliedMigrations()){
+    <li> @migartion</li>
+}
+@foreach(var migartion in dbContext.Database.GetPendingMigrations()){
+    <li> @migartion (pending)</li>
+}
+<hr>
+@if(!can_connect){
+    <p class="alert alert-danger">không có khả năng kết nối đến Database</p>
+}
+@if(dbContext.Database.GetPendingMigrations().Any()){
+    <form method="post">
+        <button class="btn btn-success"  asp-action="Migration" >Tạo Database (Cập nhật Database)</button>
+    </form>
+}
+@if(can_connect){
+    <h2>Các Table</h2>
+    await dbContext.Database.OpenConnectionAsync();
+    var table = dbContext.Database.GetDbConnection().GetSchema("Tables");
+    <ul>
+        @foreach(System.Data.DataRow row in table.Rows){
+            <li>@row["TABLE_NAME"]</li>
+        }
+    </ul>
+    <a class="btn btn-danger"  asp-action="DeleteDb">Xóa Database: @dbName</a>
+    <hr>
+    <a class="btn btn-danger"  asp-action="SeedData">Seed Data</a>
+    
+}
+
+
+
+
+

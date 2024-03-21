@@ -1,0 +1,59 @@
+﻿@model AppMvc.Models.Blog.Post
+
+@{
+    ViewData["Title"] = "Xóa Bài Viết";
+    
+}
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+        <h3>Bạn có chức muốn xóa bài viết này không?</h3>
+    </div>
+    <div class="card-body">
+        <div>
+            <dl class="row">
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd class = "col-sm-10">
+                    <h4>@Html.DisplayFor(model => model.Title)</h4>
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Published)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Published)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Author)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Author.UserName)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.DateUpdated)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.DateUpdated)
+                </dd>
+            </dl>
+            
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="PostId" />
+                <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                <a asp-action="Index">Quay lại danh sách bài viết</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+

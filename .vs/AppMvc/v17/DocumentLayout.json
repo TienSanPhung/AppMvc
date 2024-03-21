@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\MVC\\AppMvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\MVC\\AppMvc\\.github\\workflows\\dotnet-desktop.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\dotnet-desktop.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\blog\\models\\createpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\blog\\models\\createpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\blog\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\blog\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\blog\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\blog\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dotnet-desktop.yml",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\.github\\workflows\\dotnet-desktop.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\dotnet-desktop.yml",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\.github\\workflows\\dotnet-desktop.yml",
+              "RelativeToolTip": ".github\\workflows\\dotnet-desktop.yml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-03-21T11:06:38.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreatePostModel.cs",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Models\\CreatePostModel.cs",
+              "RelativeDocumentMoniker": "Areas\\Blog\\Models\\CreatePostModel.cs",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Models\\CreatePostModel.cs",
+              "RelativeToolTip": "Areas\\Blog\\Models\\CreatePostModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T07:56:29.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Areas\\Blog\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Areas\\Blog\\Controllers\\PostController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T12:38:58.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Areas\\Blog\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Areas\\Blog\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T14:36:40.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAQwH4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T10:38:48.912Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
