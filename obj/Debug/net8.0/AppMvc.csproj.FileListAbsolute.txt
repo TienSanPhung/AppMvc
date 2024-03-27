@@ -607,3 +607,4 @@ D:\C#\MVC\AppMvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstr
 D:\C#\MVC\AppMvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\C#\MVC\AppMvc\bin\Debug\net8.0\Bogus.dll
 D:\C#\MVC\AppMvc\obj\Debug\net8.0\AppMvc.csproj.Up2Date
+D:\C#\MVC\AppMvc\obj\Debug\net8.0\AppMvc.sourcelink.json

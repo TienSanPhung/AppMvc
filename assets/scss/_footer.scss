@@ -1,0 +1,13 @@
+.app-footer{
+    background-color:rgba(159, 142, 124, 0.642) ;
+    color: rgb(43, 40, 40) ;
+    text-align: center ;
+    text-decoration: none;
+}
+@media only screen and (min-width: 1400px) {
+    /* Áp dụng max-width là 1400px */
+    .container {
+      max-width: 1400px;
+      margin: 0 auto; /* Để căn giữa trang */
+    }
+  }

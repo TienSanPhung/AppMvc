@@ -1,0 +1,76 @@
+﻿
+@model List<Post>
+
+@using AppMvc.Components;
+
+@{
+    List<Category> categories = ViewBag.categories as List<Category>;
+        Category category = ViewBag.category as Category;
+        ViewData["Title"] = (category != null) ? category.Title : "Bài viết trong các chuyên mục";
+}
+@* breadcrumb cho các chuyên mục *@
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/">Home</a></li>
+    @if(category!=null){
+        var li = category.ListParents();
+        @foreach(var l in li){
+            <li class="breadcrumb-item active" >
+                <a asp-action="Index" asp-route-categoryslug="@l.Slug">@l.Title</a>
+            </li>
+        }
+    }
+    
+  </ol>
+</nav>
+@* tiêu đề *@
+ <h1>@ViewData["Title"]</h1>
+ @if(category != null){
+    <p>@category.Description</p>
+ }else{
+    <p>Bài viết trong các chuyên mục ...</p>
+ }
+
+ <hr>
+
+@* bài viết *@
+ @foreach(var posts in Model){
+    <div class="card mb-5 text-black shadow rounded-3 " style="max-width: 87%;">
+        <div class="row g-0">
+            <div class="col-md-2">
+                <img src="~/images/No_Image_Available.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-10">
+                <div class="card-body">
+                    <h5 class="card-title"><a class="text-decoration-none" asp-controller="ViewPost" asp-action="Details" asp-route-postslug="@posts.Slug">
+                        @posts.Title
+                    </a></h5>
+                    <p class="card-text">@posts.Description</p>
+                    
+                    <p class="card-text">
+                       
+                        <small class="text-muted">Chuyên mục: <strong>@posts.PostCategories.FirstOrDefault()?.Category.Title</strong></small>
+                        <br>
+                        
+                        <small class="text-muted">Tác giả: <strong>@posts.Author.UserName</strong></small> | 
+                        <small class="text-muted">Ngày cập nhật: <strong>@posts.DateUpdated.ToShortDateString()</strong></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ }
+
+@* phần mục lục nav *@
+ @section SideBar {
+    @await Component.InvokeAsync("AppMvc.Components.CategorySideBar", new CategorySideBar.CategorySidebarData(){
+        Categories = categories ,
+        Level = 0,
+        CateSideBarSlug = ViewBag.categoryslug
+    })
+
+ }
+
+ <partial name="_PagingXTL" model="@ViewBag.PagingModel" />

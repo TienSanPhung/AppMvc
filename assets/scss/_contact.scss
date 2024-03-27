@@ -1,7 +1,7 @@
-$contackBackground: #932685e5;
+$contackBackground: rgb(131, 111, 255);
 .contact-firstcol{
-    background-color: $contackBackground;
-    color: whitesmoke;
+    background-color: rgba(130, 70, 248, 0.897);
+    color: rgb(229, 225, 222);
     text-align: center;
 
     border-top-left-radius: 15px;
@@ -53,10 +53,10 @@ a.navbar-brand {
     color: #0366d6;
   }
   
-  .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+  .btn-contact {
+    color: #fff !important;
+    background-color: #04a2e6 !important;
+    border-color: #055b8dd4 !important;
   }
   
   .nav-pills .nav-link.active, .nav-pills .show > .nav-link {

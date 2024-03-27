@@ -1,0 +1,54 @@
+.app-navbar{
+    background-color:rgb(134, 3, 108) !important;
+    
+    .text-dark{
+        color: rgb(255, 253, 255) !important;
+        &:hover{
+            color:rgb(193, 193, 193) !important;
+        }
+    }
+    .navbar-brand{
+        color: rgb(255, 255, 255) !important;
+        &:hover{
+            color:rgb(199, 199, 199) !important;
+        }
+
+    }
+    .dropdown-toggle{
+        border-color: #a562ad;
+        color: #ffffff;
+    }
+}
+.login-text-color{
+    color: rgb(255  , 255, 255) !important;
+    &:hover{
+        color:rgb(171, 171, 171) !important;
+    }
+}
+.btn-manager{
+    color: #a562ad;
+    background-color: #f1b500;
+}
+.CategorySideBar{
+    ul,li{
+        list-style: none;
+        padding-left: 15px;
+        
+    }
+    a{
+        &:hover{
+            color: #f1b500;
+        }
+        &.active{
+            color: red;
+        }
+    }
+    >ul>li>a{font-weight:bold;}
+    h2{
+        text-transform: uppercase;
+        font-size: 1.5em;
+        border-bottom: 1px solid blue;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}

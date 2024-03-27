@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\images\\No_Image_Available.jpg",
+      "PackagePath": "staticwebassets\\images\\No_Image_Available.jpg"
+    },
+    {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\images\\email.png",
       "PackagePath": "staticwebassets\\images\\email.png"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\images\\images.png",
+      "PackagePath": "staticwebassets\\images\\images.png"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\images\\mail.png",
+      "PackagePath": "staticwebassets\\images\\mail.png"
     },
     {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\js\\site.js",

@@ -62,7 +62,7 @@ namespace AppMvc.Areas.Contacts {
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendContact([Bind("ID,FullName,Email,DateSenT,Message,PhoneNumber")] ContactModel contact)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 contact.DateSenT = DateTime.Now;
                 _context.Add(contact);

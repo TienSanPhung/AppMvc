@@ -41,5 +41,26 @@ public class Category
     [ForeignKey("ParentCategoryId")]
     [Display(Name = "Danh mục cha")]
     public Category ParentCategory { get; set; }
+
+    public void ChildrenCateIDs(ICollection<Category> childrencate , List<int> lists) {
+            if(childrencate == null){
+                childrencate = this.CategoryChildren;
+            }
+            foreach(Category childCate in childrencate){
+                lists.Add(childCate.Id);
+                ChildrenCateIDs(childCate.CategoryChildren,lists);
+            }
+     }
+     public List<Category> ListParents() { 
+        List<Category> li = new List<Category>();
+        var parent = this.ParentCategory;
+        while(parent!=null){
+            li.Add(parent);
+            parent = parent.ParentCategory;
+        }
+        li.Reverse();
+        return li;
+      }
+    
 }
 }

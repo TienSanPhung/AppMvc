@@ -5,11 +5,11 @@
 }
 @if (result.Succeeded)
 {   
-    <div class="btn-group dropstart">
-      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        Manage
-      </button>
-      <ul class="dropdown-menu dropdown-menu-right">
+      <div class="dropdown">
+        <button class="btn btn-manager dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+         Manager
+        </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" asp-action="Index" asp-controller="DbManage" asp-area="Database">Database</a></li>
         <li><a class="dropdown-item" asp-action="Index" asp-controller="Role" asp-area="Identity">Quản lý Role</a></li>
         <li><a class="dropdown-item" asp-action="Index" asp-controller="User" asp-area="Identity">Quản lý User</a></li>
