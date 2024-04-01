@@ -12,13 +12,13 @@ namespace AppMvc.Models.Contacts
         [StringLength(50)]
         [Required(ErrorMessage ="Không được để trống")]
         [Display(Name ="Họ và Tên")]
-        public string FullName { get; set; }
+        public string? FullName { get; set; }
 
         [Required(ErrorMessage ="Không được để trống")]
         [StringLength(100)]
         [EmailAddress(ErrorMessage ="Định dạng email không đúng")]
         [Display(Name ="Địa chỉ Email")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         public DateTime? DateSenT { get; set; }
 
         [Display(Name ="Nội dung")]

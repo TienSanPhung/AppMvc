@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-12">
                 <form asp-action="Edit">
-                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="ProductID">
                     <div class="form-group mb-2">
                         <label asp-for="CategoryIDs" class="control-label"></label>
@@ -63,7 +63,7 @@
 
 @{
     var summernote = new AppMvc.Models.Sommernote("#Description");
-    var summernote2 = new AppMvc.Models.Sommernote("#Content");
+    var summernote2 = new AppMvc.Models.Sommernote("#Content", false);
 }
 <partial name="_SummernotePartial" model="summernote"/>
 <partial name="_SummernotePartial" model="summernote2"/>
