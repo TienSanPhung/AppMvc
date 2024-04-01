@@ -1,0 +1,84 @@
+﻿@model IEnumerable<AppMvc.Models.Product.ProductModel>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+    
+}
+
+<partial name="_AlertMessage" />
+
+<div class="card box-shadow">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+        <p>
+            <a class="btn btn-primary" asp-action="Create">Tạo Mới</a>
+        </p>
+        <p>Tổng số sản phẩm: @ViewBag.totalproduct</p>
+    </div>
+    <div class="card-body">
+        <table class="table">
+    <thead>
+        <tr>
+            <th>
+                STT
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Published)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateUpdated)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @(++ViewBag.productIndex)
+            </td>
+            <td>
+                
+                <a class="text-decoration-none" asp-action="Details" asp-route-id="@item.ProductID">
+                    @Html.DisplayFor(modelItem => item.Title) 
+                </a> 
+                <br>
+                --> @string.Join(", ",item.ProductCategoryProducts.Select(pc => pc.Category.Title))
+                
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Published)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateUpdated)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProductID">Sửa</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductID">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+    <div class="justify-content-sm-center">
+        <partial name="_PagingXTL" model="@ViewBag.PagingModel" />
+    </div>
+    </div>
+</div>
+
+

@@ -8,16 +8,19 @@
 
   <ItemGroup>
     <Compile Remove="Areas\MvcBing\**" />
+    <Compile Remove="Areas\ProductManage\**" />
     <Content Remove="Areas\MvcBing\**" />
+    <Content Remove="Areas\ProductManage\**" />
     <EmbeddedResource Remove="Areas\MvcBing\**" />
+    <EmbeddedResource Remove="Areas\ProductManage\**" />
     <None Remove="Areas\MvcBing\**" />
+    <None Remove="Areas\ProductManage\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <Content Remove="Areas\Contact\Views\_ViewStart.cshtml" />
     <Content Remove="Areas\MvcBd\Views\_ViewStart.cshtml" />
-    <Content Remove="Areas\ProductManage\Views\_ViewImports.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,9 +65,7 @@
     <Folder Include="Areas\Database\Controllers\" />
     <Folder Include="Areas\Database\Data\" />
     <Folder Include="Areas\Database\Models\" />
-    <Folder Include="Areas\ProductManage\Controllers\" />
-    <Folder Include="Areas\ProductManage\Data\" />
-    <Folder Include="Areas\ProductManage\Models\" />
+    <Folder Include="Areas\Product\Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
     <Folder Include="Migrations\" />
@@ -82,22 +83,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\ProductManage\Views\_ViewImports.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <_ContentIncludedByDefault Remove="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\Blog\Views\_ViewImports.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\Contact\Views\_ViewStart.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\MvcBd\Views\_ViewStart.cshtml" />
-    <_ContentIncludedByDefault Remove="Areas\ProductManage\Views\_ViewImports.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <None Include="Areas\Contact\Views\_ViewStart.cshtml" />
     <None Include="Areas\MvcBd\Views\_ViewStart.cshtml" />
-    <None Include="Areas\ProductManage\Views\_ViewImports.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

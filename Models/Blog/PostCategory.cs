@@ -4,7 +4,7 @@ using AppMvc.Models.Blog;
 namespace AppMvc.Models.Blog {
 [Table("PostCategory")]
 public class PostCategory
-{
+    {
     public int PostID {set; get;}
 
     public int CategoryID {set; get;}

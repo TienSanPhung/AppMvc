@@ -1,0 +1,51 @@
+﻿@model AppMvc.Models.Product.CategoryProduct
+
+@{
+    ViewData["Title"] = "Tạo chuyên mục Sản Phẩm";
+    
+}
+
+
+
+<div class="row card box-shadow">
+    <h1 class="card-header">@ViewData["Title"]</h1>
+    <div class="col-md-11 card-body">
+        <form asp-action="Create">
+            <div class="container">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-2 ">
+                    <label  asp-for="ParentCategoryId" class="control-label"></label>
+                    <select  asp-for="ParentCategoryId" class ="form-control" asp-items="ViewBag.ParentCategoryId"></select>
+                </div> 
+                <div class="form-group mb-2 ">
+                    <label   asp-for="Title" class="control-label"></label>
+                    <input  asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-2 ">
+                    <label  asp-for="Description" class="control-label"></label>
+                    <textarea rows="5"  asp-for="Description" class="form-control" ></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-2 ">
+                    <label  asp-for="Slug" class="control-label"></label>
+                    <input  asp-for="Slug" class="form-control" />
+                    <span asp-validation-for="Slug" class="text-danger"></span>
+                </div>
+                                                                                                     
+            </div>
+            <div class="form-group mb-2 container">
+                <input type="submit" value="Tạo mới" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Quay lại danh sách chuyên mục sản phẩm</a>
+</div>
+@{
+    var summernote = new AppMvc.Models.Sommernote("#Description");
+}
+<partial name="_SummernotePartial" model="summernote"/>
+
