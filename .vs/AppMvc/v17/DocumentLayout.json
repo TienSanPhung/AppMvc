@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "D:\\C#\\MVC\\AppMvc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\blog\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\blog\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\files\\views\\filemanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\files\\views\\filemanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\blog\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\blog\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\product\\controllers\\productmanagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\product\\controllers\\productmanagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\blog\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\blog\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\product\\views\\productmanage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\product\\views\\productmanage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\product\\views\\productmanage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\product\\views\\productmanage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\files\\views\\shared\\_layoutfilemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\files\\views\\shared\\_layoutfilemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,93 +30,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T12:45:31.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PostController.cs",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\PostController.cs",
-              "RelativeDocumentMoniker": "Areas\\Blog\\Controllers\\PostController.cs",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\PostController.cs",
-              "RelativeToolTip": "Areas\\Blog\\Controllers\\PostController.cs",
-              "ViewState": "AQIAAJ8AAAAAAAAAAAAcwLAAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T12:37:23.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Blog\\Views\\Category\\Edit.cshtml",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Blog\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
+              "Title": "_LayoutFileManager.cshtml",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Files\\Views\\Shared\\_LayoutFileManager.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Files\\Views\\Shared\\_LayoutFileManager.cshtml",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Files\\Views\\Shared\\_LayoutFileManager.cshtml",
+              "RelativeToolTip": "Areas\\Files\\Views\\Shared\\_LayoutFileManager.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T12:26:49.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T16:47:28.747Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Areas\\Blog\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Blog\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Areas\\Blog\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAPUAAAAAAAAAAAAcwKEAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T12:26:17.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Views\\ProductManage\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Product\\Views\\ProductManage\\Edit.cshtml",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Views\\ProductManage\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Product\\Views\\ProductManage\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Files\\Views\\FileManager\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Files\\Views\\FileManager\\Index.cshtml",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Files\\Views\\FileManager\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Files\\Views\\FileManager\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T10:16:33.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Views\\ProductManage\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Product\\Views\\ProductManage\\Create.cshtml",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Views\\ProductManage\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Product\\Views\\ProductManage\\Create.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T10:13:49.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductManageController.cs",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Controllers\\ProductManageController.cs",
-              "RelativeDocumentMoniker": "Areas\\Product\\Controllers\\ProductManageController.cs",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Controllers\\ProductManageController.cs",
-              "RelativeToolTip": "Areas\\Product\\Controllers\\ProductManageController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAALEAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T09:35:28.955Z",
+              "WhenOpened": "2024-04-01T16:41:35.579Z",
               "EditorCaption": ""
             }
           ]
