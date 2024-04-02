@@ -1,0 +1,70 @@
+﻿@model AppMvc.Areas.Product.Models.CreateProductModel
+
+@{
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+    var list = ViewData["categories"] as MultiSelectList;
+}
+
+<div class="card">
+
+    <div class="card-header">         
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ProductID">
+                    <div class="form-group mb-2">
+                        <label asp-for="CategoryIDs" class="control-label"></label>
+                        <select asp-for="CategoryIDs" multiple="multiple" asp-items="list" class="w-100" ></select>
+                        <span asp-validation-for="CategoryIDs" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Description" class="control-label"></label>
+                        <textarea asp-for="Description" class="form-control" > </textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Slug" class="control-label"></label>
+                        <input asp-for="Slug" class="form-control" />
+                        <span asp-validation-for="Slug" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Content" class="control-label"></label>
+                        <textarea asp-for="Content" class="form-control" > </textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2 form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Published" /> @Html.DisplayNameFor(model => model.Published)
+                        </label>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="submit" value="Chỉnh Sửa" class="btn btn-primary" /> |
+                        <a asp-action="Index">Quay lại danh sách sản phẩm</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    var summernote = new AppMvc.Models.Sommernote("#Description");
+    var summernote2 = new AppMvc.Models.Sommernote("#Content", false);
+}
+<partial name="_SummernotePartial" model="summernote"/>
+<partial name="_SummernotePartial" model="summernote2"/>
+

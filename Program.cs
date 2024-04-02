@@ -4,6 +4,7 @@ using AppMvc.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -126,6 +127,12 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions(){
+    FileProvider =  new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(),"Uploads")
+    ),
+    RequestPath = "/contents"
+});
 
 app.UseRouting();
 

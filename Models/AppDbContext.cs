@@ -1,5 +1,8 @@
 ﻿using  AppMvc.Models.Blog;
 using AppMvc.Models.Contacts;
+using AppMvc.Models.Product;
+
+//using AppMvc.Models.Product;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,12 +40,29 @@ namespace AppMvc.Models{
             builder.Entity<Post>(entity=>{
                 entity.HasIndex(c=>c.Slug).IsUnique();
             });
+            // bảng product 
+            builder.Entity<CategoryProduct>(entity =>
+            {
+                entity.HasIndex(c => c.Slug);
+            });
+            builder.Entity<ProductCategoryProduct>(entity =>
+            {
+                entity.HasKey(c => new { c.ProductID, c.CategoryID });
+            });
+            builder.Entity<ProductModel>(entity =>
+            {
+                entity.HasIndex(c => c.Slug).IsUnique();
+            });
         }
         public DbSet<Contact> Contacts {set;get;}
+        // các bảng danh mục
         public DbSet<Category> Categories {set;get;}
-
         public DbSet<Post> Posts {set; get;}
         public DbSet<PostCategory> PostCategories {set; get;}
+        // các bảng products
+        public DbSet<CategoryProduct> CategoryProducts { set; get; }
+        public DbSet<ProductModel> Products { set; get; }
+        public DbSet<ProductCategoryProduct> ProductCateProducts { set; get; }
     }
 
 }

@@ -55,6 +55,13 @@
         </div>
     </div>
 </div>
+
+@{
+    var summernote = new AppMvc.Models.Sommernote("#Description");
+    var summernote2 = new AppMvc.Models.Sommernote("#Content", false);
+}
+<partial name="_SummernotePartial" model="summernote"/>
+<partial name="_SummernotePartial" model="summernote2"/>
 @section Scripts {
     @* @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
     <script src="~/lib/multiple-select/multiple-select.min.js"></script>

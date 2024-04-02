@@ -1,0 +1,62 @@
+﻿@model IEnumerable<AppMvc.Models.Product.CategoryProduct>
+
+@{
+    ViewData["Title"] = "Chuyên mục sản phẩm";
+    
+}
+<div class="card box-shadow">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+
+        <p>
+            <a asp-action="Create" class="btn btn-primary btn-sm">Tạo chuyên mục</a>
+        </p>
+    </div>
+    <div class="card-body">
+        <table class="table card box-shadow">
+            <thead class="card-header  bg-color-header"> 
+                <tr class="row">
+                    <th class="col-5">
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th class="col-5">
+                        @Html.DisplayNameFor(model => model.Slug)
+                    </th>
+                    <th class="col-2"></th>
+                </tr>
+            </thead>
+            <tbody class="text-black card-body bg-body">
+        @foreach (var item in Model) {
+            await RenderBlog(item,0);
+        }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@{
+    async Task RenderBlog(AppMvc.Models.Product.CategoryProduct item, int level){
+        string prefix = string.Concat(Enumerable.Repeat("&nbsp;&nbsp;&nbsp;&nbsp;", level));
+        <tr class="row">
+            <td class="col-5">
+                 @Html.Raw(prefix)
+                 <a  asp-action="Details" class="text-center text-decoration-none " asp-route-id="@item.Id">
+                    @Html.DisplayFor(modelItem => item.Title)
+                 </a> 
+            </td>
+            <td class="col-5">
+                @Html.DisplayFor(modelItem => item.Slug)
+            </td>
+            <td class="col-2">
+                
+                <a  class="text-decoration-none" asp-action="Edit" asp-route-id="@item.Id">Sửa</a> |
+                <a  class="text-decoration-none" asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
+            </td>
+        </tr>
+        if(item.CategoryChildren?.Count >0){
+            foreach(var c in item.CategoryChildren){
+                await RenderBlog(c,level +1);
+            }
+        }
+    }
+}

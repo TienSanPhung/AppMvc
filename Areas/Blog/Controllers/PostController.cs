@@ -36,7 +36,7 @@ namespace AppMvc.Areas.Blog.Controllers
         public async Task<IActionResult> Index([FromQuery(Name ="p")] int currentPage, int pagingSize)
         {
             var posts = _context.Posts.Include(p => p.Author)
-                                .OrderByDescending(p => p.DateCreated);
+                                .OrderByDescending(p => p.DateUpdated);
             
             int totalpost = await posts.CountAsync();
             if(pagingSize < 20) pagingSize =20;

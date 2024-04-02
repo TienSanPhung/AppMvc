@@ -12,7 +12,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 </head>
 <body>
-    <header>
+    <header >
         <nav class="navbar app-navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AppMvc</a>
@@ -41,13 +41,16 @@
             
         </nav>
     </header>
-    <div class="container container-xxl">
+
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+    <div class="Box-reAbsolute">
 
-    <footer class="border-top app-footer footer">
+    </div>
+    <footer class="border-top app-footer footer ">
         <div class="container  text-decoration-none">
             &copy; 2024 - AppMvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
