@@ -73,6 +73,7 @@
     <Folder Include="Data\" />
     <Folder Include="Migrations\" />
     <Folder Include="Uploads\" />
+    <Folder Include="Uploads\Products\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />

@@ -14,6 +14,8 @@ using AppMvc.Utilities;
 using System.Data;
 using AppMvc.Areas.Product.Models;
 using AppMvc.Models.Product;
+using System.ComponentModel.DataAnnotations;
+using NuGet.Protocol.Plugins;
 
 namespace AppMvc.Areas.Product.Controllers
 {
@@ -295,6 +297,138 @@ namespace AppMvc.Areas.Product.Controllers
         private bool ProductExists(int id)
         {
             return _context.Products.Any(e => e.ProductID == id);
+        }
+
+        public class UploadOneFile{
+
+            [Required(ErrorMessage = "phải chọn file upload hình ảnh")]
+            [DataType(DataType.Upload)]
+            [Display(Name = "Chọn file upload")]
+            public IFormFile FileUpload {set; get;}
+
+        }
+
+        [HttpGet]
+        public IActionResult UploadsPhoto(int id){
+
+            var product =  _context.Products.Where(p => p.ProductID == id)
+                            .Include(p => p.ProductPhotos)
+                            .FirstOrDefault();
+            if(product == null){
+                return NotFound("không có sản phẩm nào trùng với id");
+            }
+            ViewData["product"] = product;
+            return View(new UploadOneFile());
+        }
+
+        [HttpPost, ActionName("UploadsPhoto")]
+        public async Task<IActionResult> UploadsPhotoAsync(int id,[Bind("FileUpload")] UploadOneFile f){
+
+            var product =  _context.Products.Where(p => p.ProductID == id)
+                            .Include(p => p.ProductPhotos)
+                            .FirstOrDefault();
+            if(product == null){
+                return NotFound("không có sản phẩm nào trùng với id");
+            }
+
+            if(f != null){
+                var fileName = Path.GetFileNameWithoutExtension(Path.GetRandomFileName())
+                                 + Path.GetExtension(f.FileUpload.FileName);
+
+                var file = Path.Combine("Uploads","Products",fileName);
+
+                using(var filestream = new FileStream(file, FileMode.Create)){
+                    await f.FileUpload.CopyToAsync(filestream);
+                }
+
+                _context.Add(new ProductPhoto(){
+                    ProductId = product.ProductID,
+                    FileName = fileName
+                });
+
+                await _context.SaveChangesAsync();
+            }
+
+
+
+            ViewData["product"] = product;
+            return View(f);
+        }
+
+
+        [HttpPost]
+        public IActionResult ListPhotos(int id){
+
+            var product =  _context.Products.Where(p => p.ProductID == id)
+                            .Include(p => p.ProductPhotos)
+                            .FirstOrDefault();
+            if(product == null){
+                return Json(
+                    new {
+                        success = 0,
+                        message = "không thấy sản phẩm"
+                    }
+                );
+            }
+            
+            var listphoto = product.ProductPhotos.Select(photo => new{
+                id = photo.ID,
+                path = "/contents/Products/" + photo.FileName
+            });
+
+            return Json(new {
+                success = 1,
+                photos = listphoto
+            });
+        }
+        [HttpPost]
+        public IActionResult DeletePhotos(int id){
+
+            var photo =  _context.ProductPhotos.Where(p => p.ID == id).FirstOrDefault();
+
+            if(photo != null){
+                _context.Remove(photo);
+                _context.SaveChanges();
+
+                var fielname = "Uploads/Products/" + photo.FileName;
+                System.IO.File.Delete(fielname);
+            }
+
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadsPhotoApi(int id,[Bind("FileUpload")] UploadOneFile f){
+
+            var product =  _context.Products.Where(p => p.ProductID == id)
+                            .Include(p => p.ProductPhotos)
+                            .FirstOrDefault();
+            if(product == null){
+                return NotFound("không có sản phẩm nào trùng với id");
+            }
+
+            if(f != null){
+                var fileName = Path.GetFileNameWithoutExtension(Path.GetRandomFileName())
+                                 + Path.GetExtension(f.FileUpload.FileName);
+
+                var file = Path.Combine("Uploads","Products",fileName);
+
+                using(var filestream = new FileStream(file, FileMode.Create)){
+                    await f.FileUpload.CopyToAsync(filestream);
+                }
+
+                _context.Add(new ProductPhoto(){
+                    ProductId = product.ProductID,
+                    FileName = fileName
+                });
+
+                await _context.SaveChangesAsync();
+            }
+
+
+
+           
+            return Ok();
         }
     }
 }

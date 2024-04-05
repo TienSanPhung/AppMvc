@@ -53,6 +53,11 @@ namespace AppMvc.Models{
             {
                 entity.HasIndex(c => c.Slug).IsUnique();
             });
+            // // bảng product photo
+            // builder.Entity<ProductPhoto>(entity =>
+            // {
+            //     entity.HasKey(c => new{ c.ID,c.ProductId});
+            // });
         }
         public DbSet<Contact> Contacts {set;get;}
         // các bảng danh mục
@@ -63,6 +68,9 @@ namespace AppMvc.Models{
         public DbSet<CategoryProduct> CategoryProducts { set; get; }
         public DbSet<ProductModel> Products { set; get; }
         public DbSet<ProductCategoryProduct> ProductCateProducts { set; get; }
+
+        // thêm bảng productphoto
+        public DbSet<ProductPhoto> ProductPhotos { set; get; }
     }
 
 }

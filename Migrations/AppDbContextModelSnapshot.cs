@@ -319,6 +319,28 @@ namespace AppMvc.Migrations
                     b.ToTable("Product");
                 });
 
+            modelBuilder.Entity("AppMvc.Models.Product.ProductPhoto", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductPhoto");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -526,6 +548,17 @@ namespace AppMvc.Migrations
                     b.Navigation("Author");
                 });
 
+            modelBuilder.Entity("AppMvc.Models.Product.ProductPhoto", b =>
+                {
+                    b.HasOne("AppMvc.Models.Product.ProductModel", "Products")
+                        .WithMany("ProductPhotos")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -595,6 +628,8 @@ namespace AppMvc.Migrations
             modelBuilder.Entity("AppMvc.Models.Product.ProductModel", b =>
                 {
                     b.Navigation("ProductCategoryProducts");
+
+                    b.Navigation("ProductPhotos");
                 });
 #pragma warning restore 612, 618
         }

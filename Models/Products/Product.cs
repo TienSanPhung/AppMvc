@@ -53,5 +53,7 @@ namespace AppMvc.Models.Product
 
         public List<ProductCategoryProduct>? ProductCategoryProducts { get; set; }
 
+        public List<ProductPhoto> ProductPhotos { get; set; }
+
     }
 }
