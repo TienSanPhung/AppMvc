@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "D:\\C#\\MVC\\AppMvc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/SAN/appmvc/True/SqlTable/dbo.ProductPhoto.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\files\\views\\filemanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\files\\views\\filemanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +33,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "dbo.ProductPhoto [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/SAN/appmvc/True/SqlTable/dbo.ProductPhoto.sql",
+              "ToolTip": "dbo.ProductPhoto [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-04T14:19:25.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_LayoutFileManager.cshtml",
               "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Files\\Views\\Shared\\_LayoutFileManager.cshtml",
               "RelativeDocumentMoniker": "Areas\\Files\\Views\\Shared\\_LayoutFileManager.cshtml",
@@ -42,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Files\\Views\\FileManager\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Files\\Views\\FileManager\\Index.cshtml",

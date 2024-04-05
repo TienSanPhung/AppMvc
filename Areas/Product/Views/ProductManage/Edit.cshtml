@@ -26,6 +26,13 @@
                         <input asp-for="Title" class="form-control" />
                         <span asp-validation-for="Title" class="text-danger"></span>
                     </div>
+                     <div class="form-group mb-2">
+                        <input type="file" id="selectFileUpload" class="collapse" onchange="autoUploadPhoto()"/>
+                        <span class="btn btn-info" onclick="cliclButtonUpload()">Upload</span>
+                        <div id="box-photo-upload" class="d-flex flex-wrap photo-upload" data-id="@Model.ProductID">
+                        </div>
+                    </div>
+
                     <div class="form-group mb-2">
                         <label asp-for="Description" class="control-label"></label>
                         <textarea asp-for="Description" class="form-control" > </textarea>
@@ -67,4 +74,120 @@
 }
 <partial name="_SummernotePartial" model="summernote"/>
 <partial name="_SummernotePartial" model="summernote2"/>
+@section Scripts {
+    <script>
+        function autoUploadPhoto(){
+            
+
+            
+            var formData = new FormData();
+            var id = $("#box-photo-upload").data("id");
+                formData.append("id",id);
+
+                var sofile = document.getElementById("selectFileUpload").files.lenght;
+                if(sofile == 0) return;
+                var fileData = document.getElementById("selectFileUpload").files[0];
+                formData.append("FileUpload",fileData);
+
+
+
+            var urlUpload = "@Url.Action("UploadsPhotoApi")";
+
+            $.ajax({
+                data: formData,
+                caches: false,
+                url: urlUpload,
+                type: "POST",
+                contentType: false,
+                processData: false,
+                success: function(data) {
+
+                    LoadPhotos();
+
+                }
+
+
+            });
+
+        }
+
+        function cliclButtonUpload(){
+            $("#selectFileUpload").click();
+        }
+
+        function clickDeletePhoto(){
+            $("#box-photo-upload .photodetail span").click(function(){
+                
+                if((confirm("Có chắc chắn muốn xóa ảnh không?"))!=true) return;
+                 
+                var spanButton = $(this);
+                var id = spanButton.data("id");
+
+
+                var formData = new FormData();
+                    formData.append("id",id);
+
+                var urlDelete = "@Url.Action("DeletePhotos")";
+
+                $.ajax({
+                    data: formData,
+                    cache: false,
+                    url: urlDelete,
+                    type: "POST",
+                    contentType: false,
+                    processData: false,
+                    success: function(data){
+
+                        LoadPhotos();
+                    }
+
+                });
+            });
+
+        }
+
+        function LoadPhotos(){
+            var box = $("#box-photo-upload");
+            var ProductId = box.data("id");
+            @* console.log(ProductId); *@
+
+            box.empty();
+            
+            var formData = new FormData();
+                formData.append("id",ProductId);
+
+            var urlList = "@Url.Action("ListPhotos")";
+
+            $.ajax({
+                data: formData,
+                cache: false,
+                url: urlList,
+                type: "POST",
+                contentType: false,
+                processData: false,
+                success: function(data){
+                    
+                    data.photos.forEach(function(item){
+                      var e =  $(
+                            '<div class="photodetail w-25 p-1">'
+                            + '<img class="w-100" src="'+ item.path +'" alt="">'
+                            + '<span class="btn btn-danger" data-id="'+ item.id +'">Delete</span></div>'
+                        );
+
+                        box.append(e);
+                        
+                    });
+                    clickDeletePhoto();
+
+
+                }
+
+            });
+        }
+
+        $(document).ready(function(){
+            LoadPhotos();
+        })
+    </script>
+}
 
