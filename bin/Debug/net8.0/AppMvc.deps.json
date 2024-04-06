@@ -52,15 +52,18 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
           "Microsoft.AspNetCore.Identity.UI": "8.0.3",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.3",
+          "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.Design": "8.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.3",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging.Console": "8.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
           "MimeKit": "4.4.0",
           "MySql.Data.EntityFramework": "8.3.0",
+          "Newtonsoft.Json": "13.0.3",
           "System.Data.SqlClient": "4.8.6",
           "elFinder.NetCore": "1.4.0",
           "Microsoft.AspNetCore.Antiforgery": "8.0.0.0",
@@ -141,7 +144,7 @@
           "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes": "8.0.0.0",
           "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic": "8.0.0.0",
           "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets": "8.0.0.0",
-          "Microsoft.AspNetCore.Session": "8.0.0.0",
+          "Microsoft.AspNetCore.Session.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.SignalR.Common": "8.0.0.0",
           "Microsoft.AspNetCore.SignalR.Core": "8.0.0.0",
           "Microsoft.AspNetCore.SignalR": "8.0.0.0",
@@ -1420,6 +1423,15 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Session/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Options": "8.0.2"
         }
       },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
@@ -3703,7 +3715,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Session/8.0.0.0": {
+      "Microsoft.AspNetCore.Session.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Session.dll": {}
         },
@@ -5714,6 +5726,13 @@
       "path": "microsoft.aspnetcore.razor.language/6.0.24",
       "hashPath": "microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Session/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XYyUl7Did30X8L78jKQZEX8LUinTxMeU56evoVUJUlyrEJjKRvMJVI/49Rj2pRm3ILgVtIfq/1tgX9pqij4Teg==",
+      "path": "microsoft.aspnetcore.session/2.2.0",
+      "hashPath": "microsoft.aspnetcore.session.2.2.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -7084,7 +7103,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Session/8.0.0.0": {
+    "Microsoft.AspNetCore.Session.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

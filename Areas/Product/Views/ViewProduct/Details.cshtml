@@ -1,0 +1,87 @@
+
+@model ProductModel
+
+@using AppMvc.Components;
+
+
+@{
+    List<CategoryProduct> categories = ViewBag.categories as List<CategoryProduct>;
+        CategoryProduct category = ViewBag.category as CategoryProduct;
+        ViewData["title"] = Model.Title;
+    IQueryable<ProductModel> otherProduct = ViewBag.otherProduct as IQueryable<ProductModel>;
+}
+@* breadcrumb cho các chuyên mục *@
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/">Home</a></li>
+    @if(category!=null){
+        var li = category.ListParents();
+        @foreach(var l in li){
+            <li class="breadcrumb-item active" >
+                <a asp-action="Index" asp-route-categoryslug="@l.Slug">@l.Title</a>
+            </li>
+        }
+        <li class="breadcrumb-item active" >
+                <a asp-action="Index" asp-route-categoryslug="@category.Slug">@category.Title</a>
+        </li>
+    }
+    
+  </ol>
+</nav>
+
+<div class="DetailPost">
+    <h2>@ViewData["title"]</h2>
+    <div class="sapo">
+       @Model.Description
+    </div>
+    <div>
+        <p>
+            Giá: <strong>@Model.Price</strong> $
+            <a asp-action="AddToCart" asp-route-productid="@Model.ProductID" class="btn btn-success">Đặt hàng</a>
+        </p>
+    </div>
+    <div>
+        <i>Người đăng: <strong>@Model.Author.UserName</strong> /
+        ngày cập nhật: @Model.DateUpdated / </i>
+
+    </div>
+    <hr>
+    @if(Model.ProductPhotos.Any()){
+        <div class="d-flex flex-warp">
+            @foreach(var photo in Model.ProductPhotos){
+                <img class="w-50" src="/contents/products/@photo.FileName"/>
+            }
+        </div>
+    }
+
+    <div>
+        @Html.Raw(Model.Content)
+    </div>
+
+
+</div>
+
+<hr>
+
+<ul class="list-group">
+        @foreach(var products in otherProduct){
+            <li class="list-group-item">
+                <a asp-controller="ViewProduct" asp-action="Details" asp-route-productslug="@products.Slug">@products.Title</a>
+            </li>
+
+        }
+    </ul>
+
+
+ @section SideBar {
+
+
+    @await Component.InvokeAsync("AppMvc.Components.ProductSideBar", new ProductSideBar.ProductSideBarData()
+    {
+        Categories = categories,
+        Level = 0,
+        CateSideBarSlug = category.Slug
+    })
+    
+
+ }

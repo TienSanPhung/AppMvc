@@ -1,0 +1,12 @@
+@{
+    Layout = "_Layout";
+}
+<div class="row">
+    <div class="col-md-2 ">
+        @RenderSection("SideBar",false)
+    </div>
+    <div class="col-md-10">
+        @RenderBody()
+    </div>
+
+</div>
