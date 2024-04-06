@@ -69,7 +69,7 @@ namespace AppMvc.Areas.Contacts {
                 await _context.SaveChangesAsync();
                 StatusMessage = "Liên hệ đã được gửi";
 
-                return RedirectToAction("Index","Home");
+                return RedirectToAction(nameof(Index));
             }
             return View(contact);
         }

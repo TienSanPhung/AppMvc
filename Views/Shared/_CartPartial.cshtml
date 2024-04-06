@@ -1,0 +1,22 @@
+@using AppMvc.Areas.Product.Service
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+
+@inject CartService _cartService
+@inject IAuthorizationService  authorization
+@{
+  var result = await authorization.AuthorizeAsync(this.User,"ViewManageMenu");
+}
+
+@if (result.Succeeded)
+{  
+    var cart = _cartService.GetCartItems();
+    
+    if (cart.Count >=0) {
+        
+        <div class="nav-item "><a asp-route="cart" class="text-warning">Giỏ hàng(@cart.Count) | </a></div>
+         
+    }
+}
+

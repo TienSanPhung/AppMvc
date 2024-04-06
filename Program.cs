@@ -1,3 +1,5 @@
+using AppMvc.Areas.Product.Models;
+using AppMvc.Areas.Product.Service;
 using AppMvc.Data;
 using AppMvc.Models;
 using AppMvc.Services;
@@ -30,6 +32,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole> ()
 
 // add dịch vụ thông báo describer
 builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
+// add dịc vụ cartservice 
+builder.Services.AddTransient<CartService>();
 // add dịch vụ đăng nhập bằng gg và fb
 builder.Services.AddAuthentication()
     .AddGoogle(options=>{
@@ -114,6 +118,12 @@ builder.Services.Configure<RouteOptions> (options => {
     options.LowercaseUrls = true;               // url chữ thường
     options.LowercaseQueryStrings = false;      // không bắt query trong url phải in thường
 });
+builder.Services.AddDistributedMemoryCache();           // Đăng ký dịch vụ lưu cache trong bộ nhớ (Session sẽ sử dụng nó)
+builder.Services.AddSession(cfg => {                    // Đăng ký dịch vụ Session
+    cfg.Cookie.Name = "appmvc";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+    cfg.IdleTimeout = new TimeSpan(0,30, 0);    // Thời gian tồn tại của Session
+});
+
 
 var app = builder.Build();
 
@@ -133,6 +143,8 @@ app.UseStaticFiles(new StaticFileOptions(){
     ),
     RequestPath = "/contents"
 });
+
+app.UseSession();
 
 app.UseRouting();
 

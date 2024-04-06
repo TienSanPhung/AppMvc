@@ -21,6 +21,7 @@
     <Content Remove="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <Content Remove="Areas\Contact\Views\_ViewStart.cshtml" />
     <Content Remove="Areas\MvcBd\Views\_ViewStart.cshtml" />
+    <Content Remove="Areas\Product\Views\ViewProduct\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +42,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
       <PrivateAssets>all</PrivateAssets>
@@ -51,11 +53,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
     <PackageReference Include="MimeKit" Version="4.4.0" />
     <PackageReference Include="MySql.Data.EntityFramework" Version="8.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
@@ -98,6 +102,7 @@
     <None Include="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <None Include="Areas\Contact\Views\_ViewStart.cshtml" />
     <None Include="Areas\MvcBd\Views\_ViewStart.cshtml" />
+    <None Include="Areas\Product\Views\ViewProduct\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -114,6 +119,21 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Areas\Product\Views\ViewProduct\Details.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\Product\Views\ViewProduct\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\Product\Views\ViewProduct\_LayoutProduct.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
