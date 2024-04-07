@@ -20,6 +20,7 @@
   <ItemGroup>
     <Content Remove="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <Content Remove="Areas\Contact\Views\_ViewStart.cshtml" />
+    <Content Remove="Areas\Identity\Views\Account\_LoginLayout.cshtml" />
     <Content Remove="Areas\MvcBd\Views\_ViewStart.cshtml" />
     <Content Remove="Areas\Product\Views\ViewProduct\_ViewStart.cshtml" />
   </ItemGroup>
@@ -101,6 +102,7 @@
   <ItemGroup>
     <None Include="Areas\Blog\Views\ViewPost\_ViewStart.cshtml" />
     <None Include="Areas\Contact\Views\_ViewStart.cshtml" />
+    <None Include="Areas\Identity\Views\Account\_LoginLayout.cshtml" />
     <None Include="Areas\MvcBd\Views\_ViewStart.cshtml" />
     <None Include="Areas\Product\Views\ViewProduct\_ViewStart.cshtml" />
   </ItemGroup>

@@ -6,9 +6,9 @@
 @if (result.Succeeded)
 {   
       <div class="dropdown">
-        <button class="btn btn-manager dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-         Manager
-        </button>
+        <a title="Quản lý" class="dropdown-toggle btn-outline-danger btn"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+         <i class="fa-solid fa-gear"></i>
+        </a>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" asp-action="Index" asp-controller="DbManage" asp-area="Database">Database</a></li>
         <li><a class="dropdown-item" asp-action="Index" asp-controller="Role" asp-area="Identity">Quản lý Role</a></li>

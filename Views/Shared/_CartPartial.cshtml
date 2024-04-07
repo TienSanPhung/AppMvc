@@ -15,7 +15,11 @@
     
     if (cart.Count >=0) {
         
-        <div class="nav-item "><a asp-route="cart" class="text-warning">Giỏ hàng(@cart.Count) | </a></div>
+        <div class="nav-item ">
+            <a class="btn" title="Giỏ hàng" asp-route="cart" style="color: rgb(234, 230, 221);">
+                <i class="fa-solid fa-cart-shopping" ></i>(@cart.Count)  
+            </a>
+          </div>
          
     }
 }

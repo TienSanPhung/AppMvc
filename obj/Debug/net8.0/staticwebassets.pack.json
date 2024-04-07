@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\AppMvc.bundle.scp.css"
     },
     {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\css\\sb-admin-2.css",
+      "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\css\\sb-admin-2.min.css",
+      "PackagePath": "staticwebassets\\css\\sb-admin-2.min.css"
+    },
+    {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -27,6 +35,14 @@
     {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\images\\mail.png",
       "PackagePath": "staticwebassets\\images\\mail.png"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\js\\sb-admin-2.js",
+      "PackagePath": "staticwebassets\\js\\sb-admin-2.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\js\\sb-admin-2.min.js",
+      "PackagePath": "staticwebassets\\js\\sb-admin-2.min.js"
     },
     {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\js\\site.js",
@@ -871,6 +887,198 @@
     {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\elfinder\\js\\worker\\quicklook.unzip.min.js",
       "PackagePath": "staticwebassets\\lib\\elfinder\\js\\worker\\quicklook.unzip.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\jquery-easing\\jquery.easing.compatibility.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-easing\\jquery.easing.compatibility.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\jquery-easing\\jquery.easing.compatibility.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-easing\\jquery.easing.compatibility.min.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\jquery-easing\\jquery.easing.compatibility.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\jquery-easing\\jquery.easing.compatibility.min.js.map"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\jquery-easing\\jquery.easing.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-easing\\jquery.easing.js"
+    },
+    {
+      "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\jquery-easing\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-easing\\jquery.easing.min.js"
     },
     {
       "Id": "D:\\C#\\MVC\\AppMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
