@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\C#\\MVC\\AppMvc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\product\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\product\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\views\\shared\\components\\productsidebar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:views\\shared\\components\\productsidebar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\views\\shared\\components\\productsidebar\\productsidebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:views\\shared\\components\\productsidebar\\productsidebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\product\\views\\viewproduct\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\product\\views\\viewproduct\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|d:\\c#\\mvc\\appmvc\\areas\\identity\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C4BF04B-1410-43DA-A485-88C076D13976}|AppMvc.csproj|solutionrelative:areas\\identity\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,53 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CartService.cs",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Services\\CartService.cs",
-              "RelativeDocumentMoniker": "Areas\\Product\\Services\\CartService.cs",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Services\\CartService.cs",
-              "RelativeToolTip": "Areas\\Product\\Services\\CartService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAywBEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T03:59:35.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Views\\Shared\\Components\\ProductSideBar\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\ProductSideBar\\Default.cshtml",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Views\\Shared\\Components\\ProductSideBar\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\ProductSideBar\\Default.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T10:31:44.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductSideBar.cs",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Views\\Shared\\Components\\ProductSideBar\\ProductSideBar.cs",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\ProductSideBar\\ProductSideBar.cs",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Views\\Shared\\Components\\ProductSideBar\\ProductSideBar.cs",
-              "RelativeToolTip": "Views\\Shared\\Components\\ProductSideBar\\ProductSideBar.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T10:30:40.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Views\\ViewProduct\\Details.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Product\\Views\\ViewProduct\\Details.cshtml",
-              "ToolTip": "D:\\C#\\MVC\\AppMvc\\Areas\\Product\\Views\\ViewProduct\\Details.cshtml",
-              "RelativeToolTip": "Areas\\Product\\Views\\ViewProduct\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T09:47:07.186Z",
+              "WhenOpened": "2024-04-07T15:28:54.137Z",
               "EditorCaption": ""
             }
           ]
